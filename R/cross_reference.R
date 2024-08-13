@@ -35,4 +35,6 @@ cross_reference <- function(heritage, allplants, themecode, themetype) {
               file = paste(themetype, "_present in gardens.csv", sep="")
               ,sep = ',')
 
+  #view final dataframe
+  View(filteredlist)
 }
