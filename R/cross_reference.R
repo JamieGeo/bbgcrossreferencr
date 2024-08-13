@@ -1,3 +1,17 @@
+#' Cross-reference List of all IRIS Plants with Heritage Lists
+#'
+#' @param heritage a dataframe containing the list of heritage plants of concern
+#' @param allplants a dataframe containing the entire catalogue of plants on IRIS
+#' @param themecode the numerical code associated with that heritage list
+#' @param themetype description of the heritage list theme
+#'
+#' @return A saved table containing plant names that appears on the heritage
+#' list as well as the all plant list on IRIS
+#' @export
+#'
+#' @examples
+#' themecode <- "O1893"
+#' themetype <- e.g. "Catalogue of Orchids 1893"
 cross_reference <- function(heritage, allplants, themecode, themetype) {
   library(dplyr)
   library(readxl)
